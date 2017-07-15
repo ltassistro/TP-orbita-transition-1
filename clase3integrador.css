@@ -1,0 +1,153 @@
+body{
+	background:#080B2C;
+}
+
+.elipse{
+	width: 300px;
+    height: 300px;
+    background-color: none;
+    border-style:solid;
+    border-color:white;
+    border-width: 1px;
+    border-radius: 200px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transition: transform 500s linear;
+    
+    /*
+    margen negativo para "mentir" el centro.
+    estoy diciendo que el punto de pivot, que está en la esquina superior izquierda,
+    tenga un márgen de 150px que empuja el punto de pivot desde la iquierda a la derecha.
+	    lo mismo pasa con el margen superior
+	*/
+
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.tierra{
+	width: 25px;
+    height: 25px;
+    background: linear-gradient(to right, #21ccae, rgb(255, 155, 0));
+    border-radius: 15px;
+    position: relative;
+    position: absolute;
+    margin-top: 132px;
+    margin-left: -13px;
+    transition: transform 500s linear;
+    /*transition: transform 2s linear;*/
+}
+
+.sol{
+	width: 126px;
+    height: 126px;
+    background: #8BC34A;
+    border-radius: 75px;
+    background: linear-gradient(to right, rgb(242, 255, 0), rgb(255, 155, 0));
+    position:absolute;
+    margin-top:-63px;
+    margin-left:-63px;
+    top:50%;
+    left:50%;
+
+    /*transition: transform 2s linear;*/
+}
+
+
+.estrella1{
+	width: 3px;
+    height: 3px;
+    background: #fff8ff;
+    border-radius: 15px;
+    position: absolute;
+    top: 155px;
+    left: 480px;
+}
+
+.estrella2{
+	width: 3px;
+    height: 3px;
+    background: #fff8ff;
+    border-radius: 15px;
+    position: absolute;
+    top: 91px;
+    left: 630px;
+    /*transition: transform 2s linear;*/
+}
+
+.estrella3{
+	width: 3px;
+    height: 3px;
+    background: #fff8ff;
+    border-radius: 15px;
+    position: absolute;
+    top: 309px;
+    left: 666px;
+    /*transition: transform 2s linear;*/
+}
+
+.estrella4{
+	width: 3px;
+    height: 3px;
+    background: #fff8ff;
+    border-radius: 15px;
+    position: absolute;
+    top: 278px;
+    left: 376px;
+    /*transition: transform 2s linear;*/
+}
+
+.estrella5{
+	width: 3px;
+    height: 3px;
+    background: #fff8ff;
+    border-radius: 15px;
+    position: absolute;
+    top: 358px;
+    left: 522px;
+    /*transition: transform 2s linear;*/
+}
+
+
+.ejemplo2:hover {
+	transform: rotate(60deg);
+}
+
+
+/*Transiciones*/
+.elipse:hover {
+	transform:rotate(20000deg);
+}
+
+.tierra:hover {
+	transform:rotate(20000deg);
+}
+
+
+
+	/*width: 300px;
+	height: 300px;
+	background: blue;
+	border-radius:200px;
+	font-family:serif;
+	font-size:300px;
+	transition-duration: 1s; /*tiempo de transicion*/
+	/*transition-timing-function: linear;  efecto de transicion*/
+	/*transition-delay: 0.1s; /*delay o tiempo de espera para iniciar*/
+
+/*
+Transforman elementos en espacios 2d y 3d.
+
+
+transform: translate(50px, 100px); /*movimiento de traslación*/
+/*
+transform: rotate(20deg); /*movimiento de rotación rotateX rotateY rotateZ*/
+/*
+transform: scale(2, 3);v /*escalamos elemento*/
+/*
+transform: skew(20deg, 10deg); /*deformamos en eje x o y*/
+/*
+transform: matrix(1, -0.3, 0, 1, 0, 0);  /*deformamos con una matriz de datos*/
+
